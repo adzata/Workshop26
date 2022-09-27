@@ -61,7 +61,7 @@ namespace Workshop26.Test
         public void ShouldCalcManyNumbersMinusStrings(string numbers, int result)
         {
             var res = new Calculator();
-
+            //test
             Assert.That(() => res.Add(numbers), Throws.TypeOf<ArgumentException>().With.Message.EqualTo("negatives not allowed"));
         }
 
